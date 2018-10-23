@@ -1,0 +1,435 @@
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+@import "__spacing.css"; /* Using Tachyons spacing */
+
+html,
+body {
+  color: #222;
+  font-size: 1em;
+  font-family: "Roboto", sans-serif;
+  line-height: 1.4;
+  margin: 0;
+  height: 100%;
+}
+
+::-moz-selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+
+::selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+
+hr {
+  margin:10px;
+  max-width:1200px;
+  height: 3px;
+  border:0;
+  border-top: 3px solid black;
+}
+
+/*
+ * Remove the gap between audio, canvas, iframes,
+ * images, videos and the bottom of their containers:
+ * 
+ */
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+  vertical-align: middle;
+}
+
+
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: 64px;
+}
+
+.header__logo {
+  height: 32px;
+}
+
+footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: 64px;
+  max-width: 1160px;
+  margin: auto;
+}
+
+.footer__items a {
+  font-weight: 500;
+  color: #222;
+  text-decoration: none;
+}
+
+ .menu  {
+  cursor: pointer;
+}
+
+/* Dropdown button on hover & focus */
+.menu:hover 
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color:rgba(0,0,0,0.9);
+  width: 100%;
+  max-width: 1440px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  margin: auto;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: white;
+  font-family: roboto;
+  font-weight: normal;
+  Font-size: 24px;
+  line-height: 40px;
+  text-decoration: none;
+  display: block;
+  text-align: center;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+  color: #F2C94C;
+}
+
+/* Show the dropdown menu  */
+.show {
+  display:block;
+} 
+
+/*Hero Image*/
+
+.container {
+  /*display: flex;
+  flex-direction: column;*/
+  max-width: 1440px;
+  text-align: center;
+  margin: auto;
+  padding-bottom: 30px;
+  background-color:white;
+  justify-self: center;
+  height: fit-content;
+}                
+
+.picturecontainer{
+  position: relative;
+  text-align: center;
+  height: fit-content;
+}    
+
+.heropicture {
+  height: 580px;
+  margin: 0 0;
+}
+
+.herotext {
+  height: fit-content;
+  position: absolute;
+  left: 5%;
+  padding-left: 2%; 
+  padding-right: 2%;
+  top: 120px;
+  background-color: transparent;
+  text-align: left;
+}
+
+.h1{
+  box-decoration-break: clone;
+  display: inline;
+  padding-left: 20px;
+  padding-right: 20px;
+  font-family: roboto;
+  font-size: 48px;
+  color:black;
+  background-color:white;
+  text-align: left;
+  font-weight: bold;
+  line-height: 56px;
+}
+   
+/*What we Fund*/
+h2 {
+  font-family: roboto;
+  font-weight: bold;
+  font-size: 36px;
+  text-align: left;
+  color:black;
+}
+
+.top-box {
+  height: 75%;
+  vertical-align: top;
+}
+
+.top-box-text {
+  padding-left: 5%;
+  line-height: 13em;
+  font-family: roboto;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.bottom-box {
+  height: 25%;
+  color:white; 
+  background-color: black;
+  padding-left: 5%;
+  vertical-align: bottom;
+}
+
+.learn-more{
+  line-height: 2em;
+  font-family: roboto;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.item1 {
+  background-color:#F2C94C;
+  text-align: left;
+  height:216px;
+}
+
+.item2{
+  background-color:#83AFED;
+  text-align: left;
+  height: 216px;
+}
+
+/* Our Mission*/
+
+.text{
+  color:black;
+  font-family: roboto;
+  font-size: 24px;
+  text-align: left;
+  font-weight: normal;
+}
+
+.wrapper {
+  display: flex;  
+  flex-flow: row wrap;
+  font-weight: bold;
+  text-align: center;
+  padding-left: 20px;
+  padding-right: 20px;
+  max-width: 1200px;
+  margin-top: 10%;
+  background-color:white;
+  margin: auto;
+}
+  
+.wrapper > * {
+padding: 10px;
+flex: 1 100%;
+}
+
+.double{ 
+  background:white;
+  align-content: space-between;
+  padding-bottom: 40px;
+}
+
+.box1 {
+  background-color:white;
+  height: fit-content;
+}
+
+.box2 {
+  background-color: white;
+  height: fit-content;
+}
+
+.box2>img {
+  margin: 0;
+  object-position: right;
+  max-height: 313px;
+  min-width: 0px;
+  box-sizing: content-box;
+  width: 100%;
+  object-fit: contain;
+}
+    
+/*Communities*/
+
+.column-container {
+  display: flex;
+  flex-flow: column;
+  padding-left: 20px;
+  padding-right: 20px;
+  background:white;
+  margin: auto;
+  max-width: 1200px;
+  justify-self: flex-start;
+  height: fit-content;
+  background-color:white;
+}
+
+.header{
+  padding-left: 10px;
+  padding-right: 10px;
+  flex: 1 100%; 
+}
+
+.box3 {
+  align-self:left;
+  background-color:white;
+  flex: 1 100%;
+  text-align: left;
+  font-family: roboto;
+  font-size: 24px;
+  font-weight: normal;
+  max-width: 600px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.button {
+  color:white;
+  text-align: left;
+  background-color:black;
+  font-weight: bold;
+  line-height: 3em;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.triple { 
+  background:white;
+  align-content: space-between;
+  justify-content: space-between;
+  height: fit-content;padding-bottom:40px;
+}
+
+.box4, .box5, .box6 {
+  display: flex;
+  flex-flow: column wrap;
+  background-color: #F2C94C;
+  height: 100%;
+}
+
+.grey-text {
+  color:#4F4F4F;
+  font-family: roboto;
+  font-size: 18px;
+  font-style: normal;
+  text-align: left;
+  padding-top: 5%;
+}
+
+.article-name {
+  color:black;
+  font-family: roboto;
+  font-size: 24px;
+  font-weight: bold;
+  text-align: left;
+}
+
+.article-picture>img {
+  align-items: flex-end;
+  min-width: 0px;
+  width: 100%;
+  object-fit: contain;
+  object-position: bottom;
+}
+
+.naming{
+  padding-right: 5%;
+  padding-left: 5%;
+}
+
+/*Technologies*/
+
+.box7, .box8, .box9 {
+  display: flex;
+  flex-flow: column wrap;
+  background-color: #83AFED;
+  height:100%
+}
+  
+ 
+@media all and (min-width: 600px) {
+  .double {flex: 1 auto}
+  .triple {flex: 1 auto}
+  .box1 {flex:1 auto}
+  .box2 {flex:1 auto}
+  .box4 {flex:1 auto}
+  .box5 {flex:1 auto}
+  .box6 {flex:1 auto}
+  .box7{flex:1 auto}
+  .box8{flex:1 auto}
+  .box9{flex:1 auto}
+}
+
+@media all and (min-width: 800px) {
+  .header {order:1;}
+  .double {flex:1;order:2}
+  .box1 {flex:1;order:1;}
+  .box2 {flex:1;order:2;}
+  .triple{flex:1; order: 3}
+  .box3{flex:1;order:2}
+  .box4{flex:1; order:1}
+  .box5{flex:1;order:2}
+  .box6{flex:1; order:3}
+  .naming{flex:1;}
+  .article-picture{flex:1;}
+  .box7{flex:1;order:1;}
+  .box8{flex:1;order:2;}
+  .box9{flex:1;order:3;}
+  hr {flex:1; order:4;}
+}
+
+
+/* ========================================================================== ========================================================================== */
+
+
+
+   /*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+
+.clearfix:before,
+.clearfix:after {
+  content: " "; /* 1 */
+  display: table; /* 2 */
+}
+
+.clearfix:after {
+  clear: both;
+}
